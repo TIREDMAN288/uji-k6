@@ -18,6 +18,12 @@
         height: auto;
         object-fit: contain;
         padding: 10px;
+
+    }
+
+    .logo-img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
 
     /* Logo Text */
@@ -944,7 +950,6 @@
                                 </div>
                             </div>
                         @else
-                            <!-- Show login/register buttons when not logged in -->
                             <div class="sinlge-bar shopping">
                                 <a href="{{ route('login.form') }}" class="btn btn-sm btn-primary me-2">Login</a>
                                 <a href="{{ route('register.form') }}" class="btn btn-sm btn-outline-primary">Register</a>
